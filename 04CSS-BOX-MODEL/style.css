@@ -1,0 +1,26 @@
+body{
+    height: 800px;
+}
+.parent{
+    /* #2. we can also use % to make div responsive 
+    it will take the width of the parent in % 
+    by default parent is body 
+    (To use % in height we have to specify the absolute
+    height(in px) of the parent*/
+    width: 50%;
+    height: 50%;
+    background-color: brown;
+}
+.one{
+    background-color: aqua;
+    /* #1. It will set the max-width to 500px= no horizontal scroll bar will appear 
+    (Always use max-width/min-width or max-height/min-width for styling do not just use width/height overwise content will overflow)*/
+    /* max-width: 500px; */
+    width: 50%;
+    height: 50%;
+}
+
+.two{
+    background-color: yellow;
+
+}
