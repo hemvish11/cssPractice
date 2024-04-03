@@ -1,0 +1,17 @@
+/* #8. properties from parent will be applied to all its descendents*/
+body{
+    color: yellow;
+}
+
+ul{
+    font-size: 50px;
+    font-family: cursive;
+    font-weight: 900;
+    font-style: italic;
+}
+/* except some elements like button 
+so we have to manually inherit these properties*/
+button{
+    font-size: inherit;
+    font-family: inherit;
+}

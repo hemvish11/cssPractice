@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>03CascadeSpecificityInheritance</title>
+    <link rel="stylesheet" href="style.css">
+    <!--#7. here due to cascading the css rules in style2 will
+    override the rules with the same specificity -->
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+    <ul>
+        <li class="html" id="html">HTML</li>
+        <li class="css" id="css">CSS</li>
+        <li class="javascript" id="javascript">JAVASCRIPT</li>
+        <li class="react">REACT</li>
+        <li>Bootstrap</li>
+        <button>Submit</button>
+    </ul>
+    
+</body>
+</html>

@@ -1,0 +1,81 @@
+
+/* #1.code written inside the curly bracket are known as Rule */
+li{
+    background-color: red;
+}
+/* #2. Lower css will have more importance*/
+/* Meaning of cascading= jaise jaise neeche jayegi importance badhti jayegi(neeche waale ki importance jyada)
+(Styles can cascade from one rule to another, with the most specific rules taking precedence.) */
+/* below css will override the above css property*/
+li{
+    background-color: aqua;
+}
+
+/* #3. The selector with more specificity will override all other 
+selectors with low specificity */
+.react{
+    background-color: blue;
+}
+.react{
+    background-color: yellow;
+}
+
+/* #4. specificty importance:
+ inline style > id selector > class selector > element selector */
+#html{
+    background-color:crimson ;
+}
+
+.html{
+    background-color: black;
+}
+
+
+/* #5. specificities gets add up */
+
+/* now specificity ----> 5,0,0 */
+#css#css#css#css#css{
+    background-color: black;
+}
+
+/* that element whose tag=li, id = css & class = css ----> 1,1,1*/
+li#css.css{
+    background-color: purple;
+}
+/* that element whose id = css & class = css  -----> 1,1,0*/
+
+#css.css{
+    background-color: pink;
+}
+
+#css{
+    background-color: yellow;
+}
+
+
+/*#6. specificity (id = 1 > class= 999999999999999999999999999 ) */
+/* specificity ----> 1,0,0 */
+
+#javascript{
+    background-color: red;
+}
+
+/* specificity ----> 0,101,0 */
+.javascript.javascript.javascript.javascript.javascript.javascript.javascript.javascript.javascript.javascript
+.javascript.javascript.javascript.javascript.javascript.javascript.javascript.javascript.javascript.javascript
+.javascript.javascript.javascript.javascript.javascript.javascript.javascript.javascript.javascript.javascript
+.javascript.javascript.javascript.javascript.javascript.javascript.javascript.javascript.javascript.javascript
+.javascript.javascript.javascript.javascript.javascript.javascript.javascript.javascript.javascript.javascript
+.javascript.javascript.javascript.javascript.javascript.javascript.javascript.javascript.javascript.javascript
+.javascript.javascript.javascript.javascript.javascript.javascript.javascript.javascript.javascript.javascript
+.javascript.javascript.javascript.javascript.javascript.javascript.javascript.javascript.javascript.javascript
+.javascript.javascript.javascript.javascript.javascript.javascript.javascript.javascript.javascript.javascript
+.javascript.javascript.javascript.javascript.javascript.javascript.javascript.javascript.javascript.javascript
+.javascript{
+    background-color: blue;
+}
+
+li{
+    background-color: greenyellow;
+}
+
