@@ -1,0 +1,58 @@
+
+/* #2. All the rules can be overrrided including
+ inline by using !important keyword*/
+li{
+    background-color: red !important;
+}
+
+/* #3. important keyword has 0 specificity as specificity is only 
+applicable for selectors*/
+
+/* #4. important keyword also follows cascading rule as well */
+
+li{
+    background-color: aqua !important;
+}
+
+.react{
+    background-color: blue;
+}
+.react{
+    background-color: yellow;
+}
+
+#html{
+    background-color:crimson ;
+}
+
+.html{
+    background-color: black;
+}
+
+
+
+#css#css#css#css#css{
+    background-color: black;
+}
+
+li#css.css{
+    background-color: purple;
+}
+
+#css.css{
+    background-color: pink;
+}
+
+#css{
+    background-color: yellow;
+}
+
+#javascript{
+    background-color: red;
+}
+
+
+li{
+    background-color: greenyellow;
+}
+
